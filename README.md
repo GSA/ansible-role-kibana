@@ -1,5 +1,7 @@
 # Ansible Role: Kibana
+[![CircleCI](https://circleci.com/gh/GSA/ansible-role-kibana.svg?style=svg)](https://circleci.com/gh/GSA/ansible-role-kibana)
 
+Forked of [geerlingguy.kibana](https://github.com/geerlingguy/ansible-role-kibana)
 [![Build Status](https://travis-ci.org/geerlingguy/ansible-role-kibana.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-kibana)
 
 An Ansible Role that installs Kibana on RedHat/CentOS or Debian/Ubuntu.
@@ -50,10 +52,18 @@ If Elasticsearch is protected by HTTP basic authentication, set the username and
 None.
 
 ## Example Playbook
-
+```
     - hosts: kibana
       roles:
-        - geerlingguy.kibana
+        - ansible-role-kibana
+```
+
+## Testing
+```
+pip install pipenv
+sudo pipenv install
+pipenv run test
+```
 
 ## License
 

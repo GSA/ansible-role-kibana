@@ -18,13 +18,8 @@
 
 - name: Copy Kibana configuration.
   template:
-<<<<<<< HEAD
-    src: kibana.yml.j2
-    dest: "/etc/kibana/kibana.yml"
-=======
     src: "{{ kibana_config_template }}"
     dest: "{{ kibana_config_file_path }}"
->>>>>>> b307e5f37e21ea147c0bc3c1867325f131395faa
     owner: root
     group: root
     mode: 0644
